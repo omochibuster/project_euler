@@ -1,0 +1,14 @@
+Digit factorials
+Problem 34
+145 is a curious number, as 1! + 4! + 5! = 1 + 24 + 120 = 145.
+
+Find the sum of all numbers which are equal to the sum of the factorial of their digits.
+
+Note: as 1! = 1 and 2! = 2 are not sums they are not included.
+
+Problem 34 uŒ…‚ÌŠKæv 
+145‚Í–Ê”’‚¢”‚Å‚ ‚é. 1! + 4! + 5! = 1 + 24 + 120 = 145‚Æ‚È‚é.
+
+ŠeŒ…‚Ì”‚ÌŠKæ‚Ì˜a‚ª©•ª©g‚Æˆê’v‚·‚é‚æ‚¤‚È”‚Ì˜a‚ğ‹‚ß‚æ.
+
+’: 1! = 1 ‚Æ 2! = 2 ‚Í‘˜a‚ÉŠÜ‚ß‚Ä‚Í‚È‚ç‚È‚¢.

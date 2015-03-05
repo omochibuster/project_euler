@@ -1,0 +1,20 @@
+Consecutive prime sum
+Problem 50
+The prime 41, can be written as the sum of six consecutive primes:
+
+41 = 2 + 3 + 5 + 7 + 11 + 13
+This is the longest sum of consecutive primes that adds to a prime below one-hundred.
+
+The longest sum of consecutive primes below one-thousand that adds to a prime, contains 21 terms, and is equal to 953.
+
+Which prime, below one-million, can be written as the sum of the most consecutive primes?
+
+Problem 50 u˜A‘±‚·‚é‘f”‚Ì˜av
+‘f”41‚Í6‚Â‚Ì˜A‘±‚·‚é‘f”‚Ì˜a‚Æ‚µ‚Ä•\‚¹‚é:
+
+41 = 2 + 3 + 5 + 7 + 11 + 13.
+100–¢–‚Ì‘f”‚ğ˜A‘±‚·‚é‘f”‚Ì˜a‚Å•\‚µ‚½‚Æ‚«‚É‚±‚ê‚ªÅ’·‚É‚È‚é.
+
+“¯—l‚É, ˜A‘±‚·‚é‘f”‚Ì˜a‚Å1000–¢–‚Ì‘f”‚ğ•\‚µ‚½‚Æ‚«‚ÉÅ’·‚É‚È‚é‚Ì‚Í953‚Å21€‚ğ‚Â.
+
+100–œ–¢–‚Ì‘f”‚ğ˜A‘±‚·‚é‘f”‚Ì˜a‚Å•\‚µ‚½‚Æ‚«‚ÉÅ’·‚É‚È‚é‚Ì‚Í‚Ç‚Ì‘f”‚©?

@@ -1,0 +1,27 @@
+Combinatoric selections
+Problem 53
+There are exactly ten ways of selecting three from five, 12345:
+
+123, 124, 125, 134, 135, 145, 234, 235, 245, and 345
+
+In combinatorics, we use the notation, 5C3 = 10.
+
+In general,
+
+nCr =	(n!) / (r!(n-r)!)
+,where r <= n, n! = n~(n-1)~...~3~2~1, and 0! = 1.
+It is not until n = 23, that a value exceeds one-million: 23C10 = 1144066.
+
+How many, not necessarily distinct, values of  nCr, for 1 <= n <= 100, are greater than one-million?
+
+Problem 53 u‘g‚Ý‡‚í‚¹‘I‘ðv
+12345‚©‚ç3‚Â‘I‚Ô‘I‚Ñ•û‚Í10’Ê‚è‚Å‚ ‚é.
+
+123, 124, 125, 134, 135, 145, 234, 235, 245, 345.
+‘g‚Ý‡‚í‚¹‚Å‚Í, ˆÈ‰º‚Ì‹L–@‚ð—p‚¢‚Ä‚±‚Ì‚±‚Æ‚ð•\‚·: 5C3 = 10.
+
+ˆê”Ê‚É, r <= n ‚É‚Â‚¢‚Ä nCr = n!/(r!(n-r)!) ‚Å‚ ‚é. ‚±‚±‚Å, n! = n~(n-1)~...~3~2~1, 0! = 1 ‚ÆŠKæ‚ð’è‹`‚·‚é.
+
+n = 23 ‚É‚È‚é‚Ü‚Å, ‚±‚ê‚ç‚Ì’l‚ª100–œ‚ð’´‚¦‚é‚±‚Æ‚Í‚È‚¢: 23C10 = 1144066.
+
+1 <= n <= 100 ‚É‚Â‚¢‚Ä, 100–œ‚ð’´‚¦‚é nCr ‚Í‰½’Ê‚è‚ ‚é‚©?

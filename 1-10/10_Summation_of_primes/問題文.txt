@@ -1,0 +1,9 @@
+The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+
+Find the sum of all the primes below two million.
+
+Problem 10 u‘f”‚Ì˜av
+
+10ˆÈ‰º‚Ì‘f”‚Ì˜a‚Í 2 + 3 + 5 + 7 = 17 ‚Å‚ ‚é.
+
+200–œˆÈ‰º‚Ì‘S‚Ä‚Ì‘f”‚Ì˜a‚ğ‹‚ß‚æ.

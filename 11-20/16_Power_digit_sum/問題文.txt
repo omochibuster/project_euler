@@ -1,0 +1,9 @@
+215 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
+
+What is the sum of the digits of the number 21000?
+
+Problem 16 u‚×‚«æ‚Ì”š˜av 
+
+215 = 32768 ‚Å‚ ‚è, ‚±‚ê‚Ì”š˜a ( ŠeŒ…‚Ì˜a ) ‚Í 3 + 2 + 7 + 6 + 8 = 26 ‚Æ‚È‚é.
+
+“¯—l‚É‚µ‚Ä, 21000 ‚Ì”š˜a‚ğ‹‚ß‚æ.
