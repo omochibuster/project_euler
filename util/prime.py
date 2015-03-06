@@ -14,5 +14,10 @@ def getPrimeList(end = 100):
 	primeList = [number for number in range(2, end + 1) if isPrime(number)]
 	return primeList
 
+def getPrime(number = 2):
+	for i in range(2, 10000000):
+		if isPrime(i):
+			yield i
+
 if __name__ == '__main__':
 	print(getPrimeList(100))
