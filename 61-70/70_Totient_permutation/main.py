@@ -9,15 +9,29 @@
 # n/φ(n) が最小となる n を求めよ.
 
 from fractions import gcd
+from prime import getPrime
+from math import sqrt
+from itertools import combinations
 
-def a(hij):
-	#hij以下の素数をすべて求める
-	#その素数から、互いに素な数を求める
-	pass
+"""
+	ｎとφ(n)が置換かどうかはのコードはまだ作成していない
+"""
 
-for i in range(30):
+a = getPrime()
+primeList = [next(a)]
+for i in range(2, 10000000):
+	if i >= primeList[-1]:
+		primeList.append(next(a))
 	count = 1
-	for j in range(2, i):
-		if gcd(i, j) == 1:
-			count += 1
-	print(i, count)
+	pl = [primeList[x] for x in range(len(primeList)) if i % primeList[x] == 0]
+	# iの中で互いに素でないものの数を数える
+	for j in range(1, len(pl) + 1):
+		for k in combinations(pl, j):
+			multi = 1
+			for l in range(len(k)):
+				multi *= k[l]
+			if len(k) % 2 == 1:
+				count += (i - 1) // multi
+			else:
+				count -= (i - 1) // multi
+	print(i, i - count)
