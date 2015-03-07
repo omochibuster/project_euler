@@ -8,30 +8,49 @@
 # 1 < n < 107 で φ(n) が n を置換したものになっているもののうち,
 # n/φ(n) が最小となる n を求めよ.
 
-from fractions import gcd
-from prime import getPrime
-from math import sqrt
-from itertools import combinations
+from functools import reduce
+import time
 
-"""
-	ｎとφ(n)が置換かどうかはのコードはまだ作成していない
-"""
+def sieve(max_n):
+    a = list(range(max_n + 1))
+    for p in filter(lambda n: a[n] == n, range(2, max_n // 2 + 1)):
+        for k in filter(lambda k: a[k] == k, range(p * 2, max_n + 1, p)):
+            a[k] = p
+    return a
 
-a = getPrime()
-primeList = [next(a)]
-for i in range(2, 10000000):
-	if i >= primeList[-1]:
-		primeList.append(next(a))
-	count = 1
-	pl = [primeList[x] for x in range(len(primeList)) if i % primeList[x] == 0]
-	# iの中で互いに素でないものの数を数える
-	for j in range(1, len(pl) + 1):
-		for k in combinations(pl, j):
-			multi = 1
-			for l in range(len(k)):
-				multi *= k[l]
-			if len(k) % 2 == 1:
-				count += (i - 1) // multi
-			else:
-				count -= (i - 1) // multi
-	print(i, i - count)
+def div_pow(n, p):
+    e = 0
+    while n % p == 0:
+        e += 1
+        n //= p
+    return n, e
+
+def calc_phi(a):
+    for n in range(2, len(a)):
+        if a[n] == n:   # prime
+            a[n] -= 1
+        else:
+            p = a[n]
+            m, e = div_pow(n, p)
+            a[n] = a[p] * p ** (e - 1) * a[m]
+    return a
+
+def gen_digits(n):
+    while n:
+        yield n % 10
+        n //= 10
+
+def is_permutation(m, n):
+    def normalize(n):
+        return reduce(lambda x, y: x * 10 + y,
+                    sorted(gen_digits(n), key = lambda e: -e))
+    return normalize(m) == normalize(n)
+
+def min_f(x, y):
+    return x if x[0] * y[1] <= x[1] * y[0] else y
+
+N = 10 ** 7
+phi = calc_phi(sieve(N))
+#print(time.clock() - t)
+g = filter(lambda n: is_permutation(n, phi[n]), range(2, N + 1))
+print(reduce(min_f, map(lambda n: (n, phi[n]), g), (9, 1)))
