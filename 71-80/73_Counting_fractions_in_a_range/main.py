@@ -8,20 +8,10 @@
 
 from fractions import gcd
 
-def primeFactorization(number):
-	list = []
-	for i in range(2, number):
-		if number % i == 0:
-			list.append(i)
-			number //= i
-			while number % i == 0:
-				number //= i
-
 end = 12000
 ans = 0
 
 for i in range(4, end + 1):
-	l = [x for x in range(1, i)]
 	for j in range(i // 3 + 1, i // 2 + 1):
 		if gcd(i, j) == 1:
 			ans += 1
